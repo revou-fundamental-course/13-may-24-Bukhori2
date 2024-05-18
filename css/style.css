@@ -1,0 +1,12 @@
+:root {
+    --background: #DFF5FF;
+    --primary: #5356FF;
+    --secondary: #378CE7;
+    --button: #67C6E3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
