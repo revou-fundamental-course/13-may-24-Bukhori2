@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Matematik</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <!-- Header website -->
     <header>
         <div class="logo">
@@ -16,10 +20,65 @@
         <div class="dropdown">
             <button id="dropBtn" class="dropbtn">Segitiga</button>
             <div id="myDropdown" class="dropdown-content"></div>
+                <button id="keliling" class="btn">Keliling Segitiga</button>
+                <button id="luas" class="btn">Luas Segitiga</button>
         </div>
     </header>
-    <section></section>
-    <footer></footer>
+    
+    <section>
+        <h1>Welcome to Solve It</h1>
+        <p>Sebuah website sederhana yang dapat menghitung luas dan keliling bangun datar</p>
+    </section>
+
+    <!-- Luas segitiga -->
+    <section>
+        <h1>Luas Segitiga</h1>
+        <img src="assets/Segitiga.png" alt="Gambar Segitiga">
+        <p>
+            Rumus luas segitiga yaitu: <br> 
+            L= &frac12; x a x t <br>
+            Dimana: <br>
+            L = luas <br>
+            a = alas <br>
+            t = tinggi
+        </p>
+        <hr>
+        <h1>Hitung Luas Segitiga</h1>
+            <label for="alas">Alas</label>
+                <input type="text" id="alas">
+            <label for="tinggi">Tinggi</label>
+                <input type="text" id="tinggi">
+        <button id="hitung" class="cta-btn-b">Hitung</button>
+        <button id="reset" class="cta-btn-y">Hitung</button>
+    </section>
+    
+    <!-- Keliling Segitiga -->
+    <section>
+        <h1>Keliling Segitiga</h1>
+        <img src="assets/Segitiga.png" alt="Gambar Segitiga">
+        <p>
+            Rumus keliling segitiga yaitu: <br> 
+            K= A + B + C <br>
+            Dimana: <br>
+            K = keliling <br>
+            A, B, C = sisi
+        </p>
+        <hr>
+        <h1>Hitung Keliling Segitiga</h1>
+            <label for="sA">Sisi A</label>
+                <input type="text" id="sA">
+            <label for="sB">Sisi B</label>
+                <input type="text" id="sB">
+            <label for="sC">Sisi C</label>
+                <input type="text" id="sC">
+        <button id="hitung" class="cta-btn-b">Hitung</button>
+        <button id="reset" class="cta-btn-y">Hitung</button>
+    </section>
+    
+
+    <footer>
+        <p>Copyright, Chorze 2024</p>
+    </footer>
 
 
     <script src="js/script.js"></script>

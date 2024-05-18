@@ -1,1 +1,1 @@
-alert (Hello);
+// This is a javascript
